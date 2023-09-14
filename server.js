@@ -3,10 +3,10 @@ const fs = require('fs')
 const app = express();
 const PORT = 3000;
 
-for(let i = 1; i<=100; i++){
+for(let i = 1; i<=5; i++){
      const dir = `DAY ${i}`
 
-fs.rmdir(dir , (err) => {
+fs.mkdir(dir, (err) => {
     if(err){
         console.log(err)
     }else{
